@@ -1,2 +1,2 @@
 # vdf2016r
-Ratings
+Be excellent to each other
