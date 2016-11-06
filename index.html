@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/chart.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="jumbotron">
+                <h1>ValleyDevFest 2016</h1>
+                <div id="chart_div"></div>
+            </div>
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="commentHeading">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseComment" aria-expanded="true" aria-controls="collapseComment">
+                                Comments
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseComment" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="commentHeading">
+                        <div id="commentBody" class="panel-body">
+                            <p>No data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="contentHeading">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
+                                Content raw numbers
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="contentHeading">
+                        <div id="contentBody" class="panel-body">
+                            <p>No data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="presentationHeading">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsePresentation" aria-expanded="false" aria-controls="collapsePresentation">
+                                Presentation raw numbers
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapsePresentation" class="panel-collapse collapse" role="tabpanel" aria-labelledby="presentationHeading">
+                        <div id="presentationBody" class="panel-body">
+                            <p>No data</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="venueHeading">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseVenue" aria-expanded="false" aria-controls="collapseVenue">
+                                Venue raw numbers
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseVenue" class="panel-collapse collapse" role="tabpanel" aria-labelledby="venueHeading">
+                        <div id="venueBody" class="panel-body">
+                            <p>No data</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/url-search-params.js"></script>
+        <script type="text/javascript" src="//www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
