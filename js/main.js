@@ -11,27 +11,47 @@ function drawChart() {
         [
           'Category',
           'Median',
-          'Average'
+          'Conference Avergae Median',
+          'Average',
+          'Conference Avergae'
         ]
       ];
       var rating = stat.rating;
       var contentRating = rating['content'];
       if (contentRating.values.length > 0) {
-        chartData.push(['Content', contentRating.median, contentRating.avg]);
+        chartData.push([
+          'Content',
+          contentRating.median,
+          contentRating.conferenceMedian,
+          contentRating.avg,
+          contentRating.conferenceAvg
+        ]);
         $('#contentBody').html(JSON.stringify(contentRating.values));
       } else {
-        chartData.push(['Content', null, null]);
+        chartData.push(['Content', null, null, null, null]);
       }
       var presentationRating = rating['presentation'];
       if (presentationRating.values.length > 0) {
-        chartData.push(['Presentation', presentationRating.median, presentationRating.avg]);
+        chartData.push([
+          'Presentation',
+          presentationRating.median,
+          presentationRating.conferenceMedian,
+          presentationRating.avg,
+          presentationRating.conferenceAvg
+        ]);
         $('#presentationBody').html(JSON.stringify(presentationRating.values));
       } else {
         chartData.push(['Presentation', null, null]);
       }
       var venueRating = rating['venue'];
       if (venueRating.values.length > 0) {
-        chartData.push(['Venue', venueRating.median, venueRating.avg]);
+        chartData.push([
+          'Venue',
+          venueRating.median,
+          venueRating.conferenceMedian,
+          venueRating.avg,
+          venueRating.conferenceAvg
+        ]);
         $('#venueBody').html(JSON.stringify(venueRating.values));
       } else {
         chartData.push(['Venue', null, null]);
