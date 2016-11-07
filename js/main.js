@@ -11,7 +11,7 @@ function drawChart() {
         [
           'Category',
           'Median',
-          'Conference Avergae Median',
+          'Conference Median Avergae',
           'Average',
           'Conference Avergae'
         ]
