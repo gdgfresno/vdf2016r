@@ -24,7 +24,7 @@
         <div class="container">
             <div class="jumbotron">
                 <h1>ValleyDevFest 2016 Session Stats</h1>
-                <div id="chart_div"></div>
+                <div id="chart-div" class="chart-div"></div>
             </div>
 
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -42,7 +42,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="panel panel-default">
+                <!-- chart accordions -->
+                <!--<div class="panel panel-default">
                     <div class="panel-heading" role="tab" id="contentHeading">
                         <h4 class="panel-title">
                             <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseContent" aria-expanded="true" aria-controls="collapseContent">
@@ -52,7 +53,9 @@
                     </div>
                     <div id="collapseContent" class="panel-collapse collapse" role="tabpanel" aria-labelledby="contentHeading">
                         <div id="contentBody" class="panel-body">
-                            <p>No data</p>
+                            <div id="contentDiv" class="chart-div">
+                                <p>No data</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -83,10 +86,11 @@
                             <p>No data</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
 
+        <script src="data/global.jsonp"></script>
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="js/plugins.js"></script>
