@@ -6,7 +6,7 @@ function drawChart() {
   var $chartDiv = $('#chart-div');
   if (searchParams.has("uuid")) {
     var uuid = searchParams.get("uuid");
-    var statURL = 'http://localhost:8887/uuid-' + uuid + '.jsonp';
+    var statURL = 'http://atoth.sote.hu/~tocsa/vdf2016r/uuid-' + uuid + '.jsonp';
     $.getJSON(statURL, function(stat) {
       var chartData = [
         [
