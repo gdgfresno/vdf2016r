@@ -80,7 +80,7 @@ function drawChart() {
           var options = {
             width: $chartDiv.width(),
             height: $chartDiv.height(),
-            title: stat.title + ' &emdash; ' + categoryName + ' rating distribution',
+            title: stat.title + ' \u2014 ' + categoryName + ' rating distribution',
             subtitle: '',
             curveType: 'function',
             pointSize: 7
