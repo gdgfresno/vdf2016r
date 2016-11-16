@@ -34,7 +34,7 @@ function drawChart() {
             '<div class="panel panel-default">' +
             '  <div class="panel-heading" role="tab" id="' + categoryName + 'Heading">' +
             '    <h4 class="panel-title">' +
-            '      <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse' + categoryName + '" aria-expanded="true" aria-controls="collapse' + categoryName + '">' +
+            '      <a role="button" class="accordion-header" data-toggle="collapse" data-parent="#accordion" href="#collapse' + categoryName + '" aria-expanded="true" aria-controls="collapse' + categoryName + '">' +
             '        ' + categoryName + ' rating distribution' +
             '      </a>' +
             '    </h4>' +

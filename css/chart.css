@@ -3,3 +3,13 @@
   height: 50vh;
   max-height: 800px;
 }
+
+.accordion-header:after {
+  font-family: 'FontAwesome';
+  content: "\f078";
+}
+
+.accordion-header.collapsed:after {
+  font-family: 'FontAwesome';
+  content: "\f054";
+}
