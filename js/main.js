@@ -83,7 +83,8 @@ function drawChart() {
             title: stat.title + ' \u2014 ' + categoryName + ' rating distribution',
             subtitle: '',
             curveType: 'function',
-            pointSize: 7
+            pointSize: 7,
+            hAxis: { slantedText: true }
           }
           var dChart = new google.visualization.LineChart(document.getElementById(categoryName + 'Div'));
           dChart.draw(distribData, options);
