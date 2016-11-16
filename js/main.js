@@ -10,11 +10,11 @@ function drawChart() {
     $.getJSON(statURL, function(stat) {
       var chartData = [
         [
-          'Category',
-          'Median',
-          'Conference Median Avergae',
-          'Average',
-          'Conference Avergae'
+          "Category",
+          "Your Session's Median",
+          "Conference Median Avergae",
+          "Your Session's Average",
+          "Conference Avergae"
         ]
       ];
       var rating = stat.rating;
@@ -58,7 +58,7 @@ function drawChart() {
           // ];
           var distribData = new google.visualization.DataTable();
           distribData.addColumn('string', 'Rating');
-          distribData.addColumn('number', 'Session');
+          distribData.addColumn('number', 'Your Session');
           distribData.addColumn('number', 'Conference (normalized)');
           var numRates = aggregateData.ratingTitles.length;
           sumAggrDistrib = aggregateData[categoryName].distribution.reduce(function(a, b) {return a + b});
@@ -80,7 +80,7 @@ function drawChart() {
           var options = {
             width: $chartDiv.width(),
             height: $chartDiv.height(),
-            title: stat.title,
+            title: stat.title + ' &emdash; ' + categoryName + ' rating distribution',
             subtitle: '',
             curveType: 'function',
             pointSize: 7
