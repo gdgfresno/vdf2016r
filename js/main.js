@@ -6,7 +6,7 @@ function drawChart() {
   var $chartDiv = $('#chart-div');
   if (searchParams.has("uuid")) {
     var uuid = searchParams.get("uuid");
-    var statURL = 'https://iwdc2017r.firebaseapp.com/data/uuid-' + uuid + '.jsonp';
+    var statURL = 'https://iwdc2017r.firebaseapp.com/uuid-' + uuid + '.jsonp';
     $.getJSON(statURL, function(stat) {
       var chartData = [
         [
