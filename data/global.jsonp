@@ -5,11 +5,11 @@ aggregateData={
     "venue"
   ],
   "ratingTitles": [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5"
+    "1 star",
+    "2 stars",
+    "3 stars",
+    "4 stars",
+    "5 stars"
   ],
   "content": {
     "avg": 4.623874458874458,
