@@ -12,9 +12,9 @@ function drawChart() {
         [
           "Category",
           "Your Session's Median",
-          "Conference Median Avergae",
+          "Conference Median Average",
           "Your Session's Average",
-          "Conference Avergae"
+          "Conference Average"
         ]
       ];
       var rating = stat.rating;
